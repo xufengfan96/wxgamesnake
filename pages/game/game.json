@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "rank-list": "../../components/rankList/rankList",
+    "roll-caption": "../../components/rollingCaption/rollingCaption"
+  },
+  "disableScroll": true
+}

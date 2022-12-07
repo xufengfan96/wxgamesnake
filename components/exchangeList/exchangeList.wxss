@@ -1,0 +1,73 @@
+/* components/exchangeList/exchangeList.wxss */ /* components/rankList/rankList.wxss */
+.background {
+  width: 500rpx;
+  height: 600rpx;
+  /* background-image: url("https://37n40771w6.goho.co/image/rank.png"); */
+  background-size: 100%;
+  opacity: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 120rpx;
+  top: 240rpx;
+}
+
+.background2 {
+  width: 500rpx;
+  height: 600rpx;
+  background-color: white;
+  position: absolute;
+  left: 120rpx;
+  top: 240rpx;
+}
+
+.block {
+  width: 500rpx;
+  height: 600rpx;
+  position: absolute;
+  left: 120rpx;
+  top: 200rpx;
+  overflow: scroll;
+  font-family: "楷体";
+}
+
+.closeButton {
+  position: absolute;
+  font-size: 60rpx;
+  right: 10rpx;
+  top: 50rpx;
+}
+
+.showList {
+  display: flex;
+}
+
+.showList .img {
+  width: 50rpx;
+  height: 50rpx;
+  padding-left: 20rpx;
+  padding-top: 15rpx;
+}
+
+.showList .name {
+  width: 60rpx;
+  padding-left: 80rpx;
+  padding-top: 15rpx;
+}
+
+.showList .num {
+  padding-top: 15rpx;
+}
+
+.title {
+  display: flex;
+  font-size: 35rpx;
+  padding-top: 50rpx;
+}
+
+.title .node:first-child {
+  padding-left: 0;
+}
+
+.title .node {
+  padding-left: 20rpx;
+}

@@ -1,0 +1,80 @@
+/* components/rankList/rankList.wxss */
+.background {
+  width: 500rpx;
+  height: 600rpx;
+  /* background-image: url("https://37n40771w6.goho.co/image/rank.png"); */
+  background-size: 100%;
+  opacity: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 120rpx;
+  top: 200rpx;
+}
+.block {
+  width: 500rpx;
+  height: 600rpx;
+  position: absolute;
+  left: 120rpx;
+  top: 200rpx;
+  overflow: scroll;
+  font-family: "楷体";
+}
+
+.closeButton {
+  position: absolute;
+  font-size: 60rpx;
+  right: 10rpx;
+  top: 10rpx;
+}
+
+.showList {
+  display: flex;
+}
+
+.showList .node:first-child {
+  padding-left: 20rpx;
+  padding-top: 25rpx;
+}
+
+.showList .name {
+  width: 120rpx;
+  height: 40rpx;
+  padding-left: 55rpx;
+  padding-top: 25rpx;
+  white-space: nowrap;
+}
+.showList .score {
+  padding-top: 25rpx;
+}
+
+.title {
+  display: flex;
+  font-size: 35rpx;
+}
+
+.title .node:first-child {
+  padding-left: 0;
+}
+
+.title .node {
+  padding-left: 25rpx;
+}
+
+.block .rankButton1 {
+  position: absolute;
+  left: 100rpx;
+  top: 10rpx;
+}
+
+.block .rankButton2 {
+  position: absolute;
+  left: 260rpx;
+  top: 10rpx;
+}
+
+.image {
+  width: 60rpx;
+  height: 60rpx;
+  padding-left: 60rpx;
+  padding-top: 10rpx;
+}

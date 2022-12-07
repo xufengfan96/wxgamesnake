@@ -1,0 +1,23 @@
+<!--components/rankList/rankList.wxml-->
+<view class="background2" hidden="{{!show}}"></view>
+<view class="background" hidden="{{!show}}" style="background-image: url('https://37n40771w6.goho.co/image/rank.png');"></view>
+<view class="background" hidden="{{!show}}"></view>
+<view class="block" hidden="{{!show}}">
+	<van-icon name="close" class="closeButton" bindtap="close" />
+	<view style="padding: 60rpx 20rpx;">
+		<view class="title">
+			<view class="node">商品图片</view>
+			<view class="node">商品名字</view>
+			<view class="node">兑换数量</view>
+		</view>
+		<view class="showList" wx:for="{{showList}}" wx:key="index" wx:for-item="item">
+			<image src="{{item.imgUrl}}" class="img" style="padding-left: {{item.index > 9 ? '0rpx' : '20rpx'}};"></image>
+			<view class="name">
+				{{item.goodsName}}
+			</view>
+			<view class="num" style="padding-left: {{item.exchangeNum > 9 ? '170rpx' : '175rpx'}};">
+				{{item.exchangeNum}}
+			</view>
+		</view>
+	</view>
+</view>

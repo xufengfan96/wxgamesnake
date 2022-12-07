@@ -1,0 +1,20 @@
+<image src="https://37n40771w6.goho.co/image/wechat.png" class="image"></image>
+<view class="line"></view>
+<view style="padding-left: 80rpx;padding-top: 90rpx;">
+	<view>申请获取以下权限</view>
+	<view style="padding-top: 50rpx;color: grey;">获得你的公开信息（昵称，头像等）</view>
+</view>
+<button wx:if="{{!userInfo}}" bindtap="showMessage" class="button">授权登录</button>
+<view class="{{messageboxClass}}">
+	<button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+		<image class="avatar" src="{{avatarUrl}}"></image>
+	</button>
+	<mp-form>
+		<mp-cells>
+			<mp-cell title="昵称">
+				<input type="nickname" class="weui-input" placeholder="请输入昵称" bind:change="onChooseName" />
+			</mp-cell>
+		</mp-cells>
+	</mp-form>
+	<button bindtap="getUserProfile" class="checkButton">确认信息</button>
+</view>

@@ -1,0 +1,31 @@
+<view class='container'>
+
+	<!-- <roll-caption text="滚动测试字幕"></roll-caption> -->
+
+	<view hidden="{{!musicOn}}" class="music" style="background-image: url('https://37n40771w6.goho.co/image/voice-on.png');" bindtap="musicChange"></view>
+	<view hidden="{{musicOn}}" class="music" style="background-image: url('https://37n40771w6.goho.co/image/voice-off.png');" bindtap="musicChange"></view>
+	<view class="rankButton" bindtap="showRankList">积分排行榜</view>
+	<rank-list show="{{show}}" list="{{rankList}}" style="z-index: 10;"></rank-list>
+	<view class='content-bottom' capture-bind:touchmove='touchMove' capture-bind:touchstart='touchStart' capture-bind:touchend='touchEnd'>
+		<view wx:for="{{ground}}" wx:for-item="cols" wx:key="index" class='ground-row'>
+			<view wx:for="{{cols}}" wx:key="index" class='ground-col'>
+				<view hidden="{{item !== 1}}" class='block' style="background-image: url('https://37n40771w6.goho.co/image/head.png');"></view>
+				<view hidden="{{item !== 2}}" class='block' style="background-image: url('https://37n40771w6.goho.co/image/body.png');"></view>
+				<view hidden="{{item !== 3}}" class='block' style="background-image: url('https://37n40771w6.goho.co/image/apple2.png');"></view>
+				<view hidden="{{item !== 4}}" class='block' style="background-image: url('https://37n40771w6.goho.co/image/diamond2.png');"></view>
+				<view hidden="{{item !== 0}}" class='block'></view>
+			</view>
+		</view>
+	</view>
+	<view class='content-top'>
+		<view class='top-item top-score'>
+			<view class='score-description'>获得苹果</view>
+			<view class='score-number'>{{appleNum}}</view>
+		</view>
+		<view class='top-item top-start' bindtap='goStart'>START</view>
+		<view class='top-item top-score'>
+			<view class='score-description'>获得钻石</view>
+			<view class='score-number'>{{diamondNum}}</view>
+		</view>
+	</view>
+</view>

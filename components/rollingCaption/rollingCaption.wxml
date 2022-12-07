@@ -1,0 +1,10 @@
+<view class="notice">
+	<view class="notice_desc">
+		<view style="transform: translateX(-{{ distance }}px);">
+			<text style="margin-right:{{ space }}px;"></text>
+			<text id="mjltest">{{ text }}</text>
+			<text style="margin-right:{{ space }}px;"></text>
+			<text>{{ text }}</text>
+		</view>
+	</view>
+</view>

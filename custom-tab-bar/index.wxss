@@ -1,0 +1,8 @@
+/* custom-tab-bar/index.wxss */
+.tabbar {
+  height: 90%;
+}
+
+.bottomItem {
+  margin-bottom: 0;
+}

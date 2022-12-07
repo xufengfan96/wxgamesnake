@@ -1,0 +1,23 @@
+<!--components/rankList/rankList.wxml-->
+<view class="background" hidden="{{!show}}" style="background-image: url('https://37n40771w6.goho.co/image/rank.png');"></view>
+<view class="block" hidden="{{!show}}">
+	<van-icon name="close" class="closeButton" bindtap="close" />
+	<view style="padding: 80rpx 20rpx;">
+		<view class="title">
+			<view class="node">排名</view>
+			<view class="node">头像</view>
+			<view class="node">用户名字</view>
+			<view class="node">分数</view>
+		</view>
+		<view class="showList" wx:for="{{showList}}" wx:key="index" wx:for-item="item">
+			<view class="node" style="padding-left: {{item.index > 9 ? '0rpx' : '20rpx'}};">{{index + 1}}</view>
+			<image src="{{item.imgUrl}}" class="image"></image>
+			<scroll-view scroll-x="true" class="name">
+				<view style="display:inline-block">
+					{{item.username}}
+				</view>
+			</scroll-view>
+			<view class="score" style="padding-left: {{item.maxScore > 9 ? '40rpx' : '50rpx'}};">{{item.maxScore}}</view>
+		</view>
+	</view>
+</view>
