@@ -1,0 +1,72 @@
+/* pages/index/index.wxss */
+.line {
+  width: 600rpx;
+  border-top: 1rpx grey solid;
+  margin: auto;
+  margin-top: 50rpx;
+}
+
+.messagebox {
+  width: 100vw;
+  height: 40vh;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  border-radius: 40rpx;
+  overflow: hidden;
+  transition: height 0.5s;
+  z-index: 5;
+}
+
+.messageboxHidden {
+  width: 100vw;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.button {
+  margin-top: 120rpx;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  color: white;
+  border-radius: 30rpx;
+  border-color: #009933;
+  background-color: #009933;
+  width: 450rpx;
+  height: 100rpx;
+}
+.checkButton {
+  margin-top: 30rpx;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  height: 100rpx;
+  color: white;
+  border-radius: 30rpx;
+  border-color: #009933;
+  background-color: #009933;
+  width: 350rpx;
+}
+
+.image {
+  width: 300rpx;
+  height: 180rpx;
+  margin-left: 220rpx;
+  margin-top: 200rpx;
+}

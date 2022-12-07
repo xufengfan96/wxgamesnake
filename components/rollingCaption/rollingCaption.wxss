@@ -1,0 +1,21 @@
+.notice {
+  width: 92%;
+  height: 56rpx;
+  line-height: 56rpx;
+  background-color: #fff;
+  box-shadow: 0 3rpx 6rpx 1rpx rgba(0, 97, 6, 0.41);
+  border-radius: 30rpx;
+  position: fixed;
+  top: 5rpx;
+  left: 30rpx;
+  display: flex;
+  z-index: 2;
+}
+
+.notice .notice_desc {
+  margin-right: 40rpx;
+  font-size: 28rpx;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+}

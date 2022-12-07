@@ -1,0 +1,33 @@
+{
+  "pages": ["pages/index/index", "pages/game/game", "pages/store/store"],
+  "window": {
+    "navigationBarBackgroundColor": "#0066cc",
+    "navigationBarTitleText": "经典贪吃蛇",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/game/game",
+        "text": "游戏",
+        "iconPath": "./images/yellowp.png",
+        "selectedIconPath": "./images/yellowp-active.png"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "商店",
+        "iconPath": "./images/yellowp.png",
+        "selectedIconPath": "./images/yellowp-active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-dialog": "@vant/weapp/dialog/index"
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+}
